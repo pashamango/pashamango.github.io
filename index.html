@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pavel Cherkashin — AI Systems Architect · Independent Researcher</title>
+<meta name="description" content="Pavel Cherkashin: AI systems architect and independent researcher. Formal verification, AI safety, research-to-product engineering.">
+<!--
+  PILOT DRAFT v2 — workathon 2026-10-17. Tracks Linear MIN-39 (POE-05).
+  v2 changes: contact minutta@gmail.com (GitHub Pages has no mailbox feature);
+  "Mindrock" without "Capital"; merged Pavel's GPT draft (verified parts only).
+  Constraints honored: no VC-sales positioning; explicit research status;
+  no claim that private Lean proofs are independently verified or public;
+  campaign-scoped links via ?src= query param.
+  Zero external requests on this page: no trackers, no fonts, no CDNs.
+-->
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 24px 20px 64px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6; color: #1a1a1a; background: #fff;
+  }
+  main { max-width: 640px; margin: 0 auto; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .tagline { color: #555; margin: 0 0 16px; font-size: 1.02rem; }
+  .intro { font-size: 1rem; margin: 0 0 8px; }
+  h2 { font-size: 1.15rem; margin: 36px 0 8px; letter-spacing: -0.005em; }
+  p, li { font-size: 0.98rem; }
+  ul { padding-left: 20px; margin: 8px 0; }
+  li { margin-bottom: 6px; }
+  a { color: #0b5fff; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  .modes { display: grid; gap: 10px; margin: 16px 0 8px; }
+  .mode {
+    display: block; padding: 14px 16px; border: 1px solid #ddd; border-radius: 10px;
+    text-decoration: none; color: inherit;
+  }
+  .mode strong { display: block; font-size: 1rem; margin-bottom: 2px; }
+  .mode span { color: #555; font-size: 0.92rem; }
+  .mode:hover { border-color: #0b5fff; }
+  .status {
+    background: #f6f6f4; border: 1px solid #e4e4e0; border-radius: 10px;
+    padding: 14px 16px; margin: 20px 0;
+  }
+  .status p { margin: 6px 0; font-size: 0.94rem; }
+  .pipeline {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.88rem; background: #f6f6f4; border-radius: 8px;
+    padding: 10px 14px; margin: 12px 0; overflow-x: auto; white-space: nowrap;
+  }
+  .cta {
+    display: inline-block; margin-top: 12px; padding: 12px 22px;
+    background: #1a1a1a; color: #fff; border-radius: 10px;
+    text-decoration: none; font-weight: 600; font-size: 1rem;
+  }
+  .cta:hover { background: #000; }
+  .connect { margin: 8px 0; }
+  .connect a { margin-right: 16px; }
+  .footnote { font-size: 0.82rem; color: #777; margin-top: 10px; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #e4e4e0; color: #777; font-size: 0.85rem; }
+  footer p { margin: 4px 0; font-size: 0.85rem; }
+  @media (min-width: 560px) {
+    .modes { grid-template-columns: 1fr 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Pavel Cherkashin</h1>
+  <p class="tagline">AI Systems Architect · Independent Researcher · Managing Partner, Mindrock</p>
+  <p class="intro">I work at the intersection of AI systems, software architecture, mathematical experimentation, and product engineering — turning ambiguous, high-risk technical questions into explicit hypotheses, reproducible prototypes, tested implementations, and practical decisions.</p>
+
+  <nav class="modes" aria-label="Choose your lens">
+    <a class="mode" href="#committees"><strong>Research committees</strong><span>What I work on and why it matters</span></a>
+    <a class="mode" href="#builders"><strong>Builders</strong><span>Public code and artifacts</span></a>
+    <a class="mode" href="#collab"><strong>Collaborators</strong><span>Advisory and joint work</span></a>
+  </nav>
+
+  <div class="status" role="note">
+    <p><strong>Research status.</strong> I work as an independent researcher, not as a fund marketer. Current threads:</p>
+    <p>— <strong>AI security &amp; safety:</strong> frontier red-teaming, evaluation, and the boundary of self in AI systems — including whether a system has a right to say no.</p>
+    <p>— <strong>Formal verification:</strong> a private research draft formalizing ontological systems — 53 theorems in Lean 4 + mathlib, machine-checked (clean build, kernel replay, no <code>sorry</code>/<code>admit</code>/<code>axiom</code>). Private draft; public release is gated, not yet independently verified.</p>
+    <p>— <strong>Market structure for programmable assets:</strong> preparing a public comment on SEC File No. S7-2026-27 (Regulation Crypto Assets) as an independent researcher — on testnets for securities and the line between play assets and real ones.</p>
+  </div>
+
+  <h2 id="committees">For research committees</h2>
+  <p>The questions I spend my time on:</p>
+  <ul>
+    <li>How do we evaluate what a frontier model <em>is</em>, not just what it outputs — and where is the boundary of its self?</li>
+    <li>Can securities markets get the same thing crypto has — a testnet where rules are learned on synthetic data before real value is at stake?</li>
+    <li>How do autonomous agents carry verifiable identity — signed mandates, scoped delegation, transparency logs ("know your agent")?</li>
+  </ul>
+  <p>Background: PhD Computer Science (Moscow State University); Managing Partner at Mindrock; previously Microsoft, Adobe, and Siebel Networks (Russia/CIS); author of a university textbook on customer strategy.</p>
+
+  <h2 id="builders">For builders — selected verifiable work</h2>
+  <ul>
+    <li><a href="https://github.com/pashamango/collatz-landmark-coordinate?src=builders">Collatz Landmark Coordinate</a> — an independently implemented coordinate evaluator with reproducible finite testing: 1,000 required cases and 1,000 additional 64-bit cases, zero observed mismatches. Explicitly distinguishes finite verification from a proof of the Collatz conjecture.</li>
+    <li><a href="https://github.com/pashamango?src=builders">github.com/pashamango</a> — everything public, in one place.</li>
+    <li><a href="https://github.com/pashamango/pashamango?src=builders">pashamango/pashamango</a> — profile configuration; start here to see how the profile is assembled.</li>
+  </ul>
+  <p>Work in progress is distinguished from independently verified public releases. I publish only what is reproducible.</p>
+
+  <h2>How I work</h2>
+  <div class="pipeline">Problem → hypothesis → architecture → prototype → independent tests → evidence → decision</div>
+  <p>I prefer showing working evidence over making claims that cannot yet be reproduced.</p>
+
+  <h2 id="collab">Opportunities</h2>
+  <p>I am interested in senior technical roles, research engineering, architecture leadership, and scoped consulting engagements where I can make a substantial contribution to an ambitious team.</p>
+  <p class="footnote">Currently considering opportunities only in states where recreational mathematics is fully legalized.</p>
+  <p class="connect">
+    <a href="https://linkedin.com/in/cherkashin?src=collab">LinkedIn</a>
+    <a href="https://github.com/pashamango?src=collab">GitHub</a>
+  </p>
+  <p><a class="cta" href="mailto:minutta@gmail.com?subject=Research%20collaboration&body=Hi%20Pavel%2C%0A%0AI%20found%20you%20via%3A%20">Start a conversation</a></p>
+  <p style="color:#777; font-size:0.88rem;">Prefer writing over calls. One paragraph on what you're building beats a pitch deck.</p>
+
+  <footer>
+    <p>© 2026 Pavel Cherkashin · Independent researcher</p>
+    <p>Research notes, not investment advice. Nothing on this page is an offer to sell securities.</p>
+    <p>No trackers on this page — no analytics, no external requests.</p>
+  </footer>
+
+</main>
+</body>
+</html>
